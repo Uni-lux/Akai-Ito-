@@ -1,49 +1,63 @@
-# ❤️ Douglas José & Ana Clara — Conectados
+Douglas José & Ana Clara — Conectados
 
-Uma animação romântica desenvolvida em **HTML, CSS e JavaScript**, contando a história de dois personagens ilustrativos conectados por um fio vermelho.
+Uma animação web romântica desenvolvida com HTML, CSS e JavaScript, criada para representar visualmente a conexão entre duas pessoas através de um fio vermelho.
 
-## ✨ Sobre o projeto
+Sobre
 
-A animação representa **Douglas José** e **Ana Clara** em uma cena inspirada na ideia de que algumas pessoas parecem estar destinadas a se encontrar.
+O projeto apresenta uma narrativa visual de aproximadamente 15 segundos, na qual dois personagens inicialmente separados são conectados por um fio vermelho e caminham um em direção ao outro até se encontrarem.
 
-Durante aproximadamente **15 segundos**, acontece a seguinte sequência:
+A animação foi desenvolvida com foco em uma experiência simples, visual e responsiva, funcionando tanto em dispositivos móveis quanto em computadores.
 
-### ⏱️ 0–3 segundos
+Animação
 
-Douglas José aparece de um lado da tela e Ana Clara aparece do outro.
+A sequência é composta por quatro momentos:
 
-### 🧵❤️ 3–7 segundos
+0–3 segundos
+Os personagens Douglas José e Ana Clara aparecem em lados opostos da tela.
 
-Um fio vermelho começa a surgir e conecta os dois personagens.
+3–7 segundos
+Um fio vermelho surge gradualmente, estabelecendo a conexão entre os dois.
 
-### 🚶 7–12 segundos
+7–12 segundos
+Os personagens começam a caminhar um em direção ao outro.
 
-Douglas José e Ana Clara caminham um em direção ao outro.
+12–15 segundos
+Os personagens se encontram. Um coração aparece e a mensagem final é apresentada:
 
-### ❤️ 12–15 segundos
+«“Alguns encontros parecem acaso… até descobrirmos que talvez sempre estivemos conectados.”»
 
-Os dois se encontram, um coração aparece e a mensagem final é exibida:
+Tecnologias
 
-> “Alguns encontros parecem acaso… até descobrirmos que talvez sempre estivemos conectados.”
+- HTML5
+- CSS3
+- JavaScript
 
----
+Recursos
 
-## 🎨 Recursos
+- Personagens ilustrativos
+- Animações utilizando CSS
+- Fio vermelho animado
+- Movimento dos personagens
+- Efeito de coração no encontro
+- Mensagem final animada
+- Layout responsivo
+- Suporte para dispositivos móveis e computadores
+- Reinício da animação através de clique ou toque
 
-- 👨 Personagem ilustrativo representando Douglas José
-- 👩 Personagem ilustrativa representando Ana Clara
-- 🧵 Fio vermelho animado
-- 🚶 Animação dos personagens caminhando
-- ❤️ Efeito de coração no encontro
-- ✨ Mensagem final animada
-- 📱 Design responsivo para celular e computador
-- 🔄 Reinício da animação ao clicar ou tocar na tela
+Estrutura
 
----
-
-## 📁 Estrutura do projeto
-
-```text
-/
+douglas-ana-clara-conectados/
 ├── douglas_ana_clara_animacao.html
 └── README.md
+
+Execução
+
+O projeto não possui dependências externas.
+
+Para executar, basta abrir o arquivo "douglas_ana_clara_animacao.html" em um navegador moderno.
+
+Autor
+
+Douglas José
+
+Projeto desenvolvido com HTML, CSS e JavaScript.
