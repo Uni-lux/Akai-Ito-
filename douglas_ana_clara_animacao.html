@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Douglas José & Ana Clara — Conectados</title>
+<style>
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#100b12;font-family:Arial,sans-serif}
+.scene{width:100vw;height:100vh;position:relative;overflow:hidden;background:
+radial-gradient(circle at 50% 35%,#5a2738 0%,#24141e 38%,#0d0910 78%)}
+.scene:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:60px 60px;opacity:.08}
+.name{position:absolute;top:8%;font-size:clamp(20px,3vw,42px);font-weight:700;color:#fff;letter-spacing:.08em;text-shadow:0 3px 20px #000;opacity:0;animation:fadeIn 1s forwards}
+.douglas-name{left:10%;animation-delay:.4s}.ana-name{right:10%;animation-delay:.4s}
+.person{position:absolute;bottom:11%;width:18vw;min-width:130px;max-width:270px;height:50vh;min-height:330px;z-index:3;transition:left 5s ease-in-out,right 5s ease-in-out,transform 5s ease-in-out}
+.douglas{left:10%;animation:walkDouglas 5s 7s forwards}.ana{right:10%;animation:walkAna 5s 7s forwards}
+.head{position:absolute;width:34%;aspect-ratio:1;border-radius:50%;top:0;left:33%;background:#e6ad87;z-index:3;box-shadow:inset -10px -6px 0 rgba(0,0,0,.06)}
+.hair{position:absolute;width:39%;height:30%;top:-3%;left:30%;background:#2a1a18;border-radius:48% 48% 38% 38%;z-index:4}
+.ana .hair{width:48%;height:42%;left:26%;background:#4b2924;border-radius:48% 48% 45% 45% 45%;box-shadow:0 45px 0 #4b2924}
+.body{position:absolute;width:48%;height:37%;top:26%;left:26%;border-radius:45% 45% 12% 12%;z-index:2}
+.douglas .body{background:#355e8d}.ana .body{background:#e86b85}
+.arm{position:absolute;width:14%;height:34%;top:31%;border-radius:30px;background:#e6ad87;z-index:1;transform-origin:top center}
+.douglas .arm.left{left:23%;transform:rotate(25deg)}.douglas .arm.right{right:22%;transform:rotate(-38deg)}
+.ana .arm.left{left:22%;transform:rotate(38deg)}.ana .arm.right{right:23%;transform:rotate(-25deg)}
+.leg{position:absolute;width:16%;height:34%;top:59%;border-radius:20px 20px 8px 8px;background:#242733;z-index:1}
+.leg.left{left:34%}.leg.right{right:34%}
+.shoe{position:absolute;width:24%;height:7%;bottom:4%;background:#151515;border-radius:60% 25% 20% 20%;z-index:2}
+.shoe.left{left:28%}.shoe.right{right:27%}
+.thread{position:absolute;top:53%;left:22%;width:56%;height:60px;z-index:5;overflow:visible}
+.thread path{fill:none;stroke:#e71f43;stroke-width:7;stroke-linecap:round;stroke-dasharray:1200;stroke-dashoffset:1200;filter:drop-shadow(0 0 8px rgba(231,31,67,.7));animation:draw 4s 3s forwards}
+.heart{position:absolute;top:44%;left:50%;transform:translate(-50%,-50%) scale(0);font-size:clamp(38px,6vw,80px);z-index:6;animation:heartPop .8s 11.8s forwards}
+.quote{position:absolute;left:50%;bottom:7%;transform:translateX(-50%) translateY(30px);width:min(86%,900px);text-align:center;color:#fff;font-size:clamp(18px,2.6vw,34px);line-height:1.4;font-weight:600;opacity:0;z-index:10;text-shadow:0 3px 15px #000;animation:quoteIn 1.5s 12.2s forwards}
+.subtitle{position:absolute;top:16%;left:50%;transform:translateX(-50%);color:#ffdbe2;opacity:0;font-size:clamp(13px,1.7vw,22px);animation:fadeIn 1s 1.2s forwards}
+@keyframes fadeIn{to{opacity:1}}@keyframes draw{to{stroke-dashoffset:0}}@keyframes heartPop{0%{transform:translate(-50%,-50%) scale(0)}70%{transform:translate(-50%,-50%) scale(1.3)}100%{transform:translate(-50%,-50%) scale(1)}}
+@keyframes quoteIn{to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes walkDouglas{to{left:39%;transform:translateX(-50%) scale(.92)}}@keyframes walkAna{to{right:39%;transform:translateX(50%) scale(.92)}}
+@media(max-width:600px){.person{width:34vw;height:46vh;bottom:14%}.name{top:7%;font-size:18px}.thread{left:18%;width:64%}.quote{bottom:5%;font-size:19px}.subtitle{top:14%;font-size:12px}}
+</style>
+</head>
+<body>
+<div class="scene">
+  <div class="name douglas-name">DOUGLAS JOSÉ</div>
+  <div class="name ana-name">ANA CLARA</div>
+  <div class="subtitle">Às vezes, o destino encontra seu próprio caminho.</div>
+
+  <div class="person douglas">
+    <div class="head"></div><div class="hair"></div><div class="body"></div>
+    <div class="arm left"></div><div class="arm right"></div>
+    <div class="leg left"></div><div class="leg right"></div>
+    <div class="shoe left"></div><div class="shoe right"></div>
+  </div>
+
+  <div class="person ana">
+    <div class="head"></div><div class="hair"></div><div class="body"></div>
+    <div class="arm left"></div><div class="arm right"></div>
+    <div class="leg left"></div><div class="leg right"></div>
+    <div class="shoe left"></div><div class="shoe right"></div>
+  </div>
+
+  <svg class="thread" viewBox="0 0 1000 100" preserveAspectRatio="none">
+    <path d="M0,55 C130,10 210,95 350,55 S570,15 700,55 S870,95 1000,45"/>
+  </svg>
+  <div class="heart">❤️</div>
+  <div class="quote">“Alguns encontros parecem acaso… até descobrirmos que talvez sempre estivemos conectados.”</div>
+</div>
+<script>
+// Reinicia a animação ao clicar/tocar na tela.
+document.addEventListener('click', () => location.reload());
+</script>
+</body>
+</html>
